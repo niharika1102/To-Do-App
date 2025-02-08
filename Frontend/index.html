@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="heading-container">
+      <h1>TO-DO</h1>
+    </div>
+    <div class="todo-container">
+      <div class="todo-input">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Add a new todo"
+          class="todo-input-field"
+        />
+        <button class="todo-input-button" onclick="addTodo()">Add</button>
+      </div>
+      <div class="todo-list-container">
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+    <div id="edit-popup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+          <h3>Edit Todo</h3>
+          <input type="text" id="edit-todo-input" class="edit-todo-input" />
+          <div class="popup-buttons">
+            <button id="save-edit-btn">Save</button>
+            <button id="cancel-edit-btn">Cancel</button>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
